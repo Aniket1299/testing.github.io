@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="colorButton">Change Background Color</button>
+    </div>
+
+    <script>
+        // Get the button element by its ID
+        const colorButton = document.getElementById('colorButton');
+
+        // Function to change the background color
+        function changeBackgroundColor() {
+            // Generate a random color (here, green) or you can set a specific color like 'green'
+            const newColor = 'green';
+
+            // Set the background color of the body
+            document.body.style.backgroundColor = newColor;
+        }
+
+        // Add a click event listener to the button
+        colorButton.addEventListener('click', changeBackgroundColor);
+    </script>
+</body>
+</html>
