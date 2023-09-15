@@ -38,21 +38,22 @@
         </form> --> 
 
         <form id="shiftStatusForm">
+            <div id="advisorRole">
             <label for="advisorRole">Advisor Role:</label>
             <select id="advisorRole" name="advisorRole" required>
                 <option value="" disabled selected>Select advisor role</option>
                 <option value="Program Advisor">Program Advisor</option>
-                <option value="Admission Advisor">Admission Advisor</option>
+                <option value="Admission Advisor">Admission Advisor</option></div>
             </select>
-    
+            <div id="shiftStatus">
             <label for="shiftStatus">Shift Status:</label>
             <select id="shiftStatus" name="shiftStatus" required>
                 <option value="" disabled selected>Select shift status</option>
                 <option value="Working">Working</option>
                 <option value="Not Working">Not Working</option>
-            </select>
-    
-            <button id="shiftStatusbutton" type="submit">Update Shift Status</button>
+            </select></div>
+            <div class="formbutton">
+            <button id="shiftStatusbutton" type="submit">Update Shift Status</button></div>
         </form>
 
         <div id="message"></div>
